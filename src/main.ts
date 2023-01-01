@@ -38,7 +38,7 @@ function sleep(ms: number) {
   return new Promise(resolve => setTimeout(resolve, ms))
 }
 
-export default async function(sec: number) {
+export default async function(sec: number=5) {
   // already running
   if (document.getElementById("__zawarudo_sepia") || document.getElementById("__zawarudo_invert")) {
     return
