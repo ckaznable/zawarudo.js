@@ -29,7 +29,7 @@
     "vite": "^4.0.0",
     "vite-plugin-dts": "^1.7.1"
   },
-  "dependencies": {
+  "peerDependencies": {
     "animejs": "^3.2.1"
   }
 }
