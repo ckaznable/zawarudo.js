@@ -17,12 +17,12 @@ jobs:
         uses: actions/setup-node@v3
         with:
           node-version: '18'
-          cache: 'yarn'
+          cache: 'npm'
 
       - name: Install and Build
         run: |
-          yarn --prefer-offline
-          yarn run build:page
+          npm ci
+          npm run build:page
       - name: Deploy 🚀
         uses: JamesIves/github-pages-deploy-action@v4
         with:
