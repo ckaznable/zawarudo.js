@@ -1,12 +1,12 @@
 import "./style.css"
 import anime from 'animejs/lib/anime.es.js'
 
-const BASE_SIZE = 50
-const xScale = Math.round(document.body.clientWidth / BASE_SIZE) + 20
-const yScale = Math.round(document.body.clientHeight / BASE_SIZE) + 20
-const scale = xScale > yScale ? xScale : yScale
-
 function theWorld(t1: HTMLElement, t2: HTMLElement) {
+  const BASE_SIZE = 50
+  const xScale = Math.round(document.body.clientWidth / BASE_SIZE) + 20
+  const yScale = Math.round(document.body.clientHeight / BASE_SIZE) + 20
+  const scale = xScale > yScale ? xScale : yScale
+
   return anime.timeline({
     easing: 'spring(1, 80, 10, 0)',
     duration: 4
