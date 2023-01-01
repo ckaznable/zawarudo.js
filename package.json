@@ -1,8 +1,11 @@
 {
   "name": "zawarudo.js",
+  "description": "simulate zawarudo effect on web",
   "version": "1.0.0",
   "type": "module",
   "types": "./dist/main.d.ts",
+  "homepage": "https://github.com/ckaznable/zawarudo.js#readme",
+  "repository": "github:ckaznable/zawarudo.js",
   "files": [
     "dist"
   ],
