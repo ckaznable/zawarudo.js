@@ -1,0 +1,32 @@
+{
+  "name": "zawarudo.js",
+  "version": "1.0.0",
+  "type": "module",
+  "types": "./dist/main.d.ts",
+  "files": [
+    "dist"
+  ],
+  "main": "./dist/zawarudo.umd.cjs",
+  "module": "./dist/zawarudo.js",
+  "exports": {
+    ".": {
+      "import": "./dist/zawarudo.js",
+      "require": "./dist/zawarudo.umd.cjs"
+    }
+  },
+  "scripts": {
+    "dev": "vite",
+    "build": "tsc && vite build",
+    "build:page": "vite build -c vite.page.js",
+    "preview": "vite preview"
+  },
+  "devDependencies": {
+    "@types/animejs": "^3.1.6",
+    "typescript": "^4.9.3",
+    "vite": "^4.0.0",
+    "vite-plugin-dts": "^1.7.1"
+  },
+  "dependencies": {
+    "animejs": "^3.2.1"
+  }
+}
